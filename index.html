@@ -9,6 +9,16 @@
 <body>
     <div class="container d-flex flex-column pt-4">
         <h1><center>TROCA TROCA</center></h1>
+        <div class="container border border-primary rounded-4 pt-4 pb-4">
+            <div class="row">
+                <div class="col">
+                    <input type="text" id="novo_nome" class="form-control" placeholder="Adicione um nome">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" onclick="adicionar()">Adicionar</button>
+                </div>
+            </div>
+        </div>
         <div id="names_container" class="container mt-4 mb-4 p-4 border border-primary d-flex flex-column rounded-4 ">
         </div>
         <button class="btn btn-primary" onclick="pickWinner()">SORTEAR</button>
