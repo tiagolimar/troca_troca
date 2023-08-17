@@ -1,3 +1,14 @@
+const desativarOption = (name)=>{
+    const checkboxes = document.getElementsByClassName("form-check-input");
+
+    for (const checkbox of checkboxes) {
+        if (checkbox.value == name) {
+            checkbox.checked = false;
+            return
+        }
+    }
+}
+
 async function readLastThreeLines(fileURL) {
     try {
         const response = await fetch(fileURL);
@@ -30,6 +41,7 @@ readLastThreeLines(fileURL)
                                     <p class="text-secondary">${data[1]}</p></div>
                                 </div>`
             trocadores.innerHTML = resultHTML;
+            desativarOption(data[0]);
         }
     })
     .catch(error => {
