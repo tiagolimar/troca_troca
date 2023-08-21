@@ -1,4 +1,4 @@
 git add .
-git commit -m "atualização lista de trocador"
+git commit -m "atualizacao lista de trocador"
 git push
 pause
