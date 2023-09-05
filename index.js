@@ -52,3 +52,10 @@ const adicionar = () => {
         </div>`
     }
 }
+
+const markChecks = (op)=>{
+        const checkboxes = document.getElementsByClassName("form-check-input");
+        for (const checkbox of checkboxes) {
+            checkbox.checked = op;
+        }
+}
