@@ -32,7 +32,7 @@ const pickWinner = () => {
     const winner = checkedNames[winnerIndex];
 
     const winnerElement = document.getElementById("winner");
-    winnerElement.innerHTML = `<center>${winner}</center>`;
+    winner? winnerElement.innerHTML = `<center>${winner}</center>`:null;
 }
 
 const getId = () => {

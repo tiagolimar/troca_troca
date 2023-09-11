@@ -2,10 +2,7 @@ const desativarOption = (name)=>{
     const checkboxes = document.getElementsByClassName("form-check-input");
 
     for (const checkbox of checkboxes) {
-        if (checkbox.value == name) {
-            checkbox.checked = false;
-            return
-        }
+        if (checkbox.value == name) checkbox.checked = false 
     }
 }
 
@@ -28,7 +25,7 @@ async function readLastThreeLines(fileURL) {
     }
 }
 
-const fileURL = 'data.txt'; // Substitua pelo URL do seu arquivo de texto
+const fileURL = 'data.txt';
 readLastThreeLines(fileURL)
     .then(resultArray => {
         resultHTML = ''
