@@ -7,7 +7,19 @@
     <style>
         .shadow{
             box-shadow: 5px 5px 5px 0px #000000;
-            
+        }
+        .removedor{
+            width: 20px;
+            color: #fff;
+        }
+        .removedor:hover{
+            cursor: pointer;
+            color: red;
+            font-weight: 700;
+        }
+        .form-check-label:has(+ .removedor:hover){
+            text-decoration: line-through;
+            color: red;
         }
     </style>
     <title>Troca Troca</title>
