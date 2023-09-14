@@ -32,10 +32,10 @@ readLastThreeLines(fileURL)
         for (const data of resultArray) {
             resultHTML += `<div class="row d-flex flex-nowrap">
                                 <div class="col">
-                                    <p>${data[0]}</p>
+                                    <p class="fw-bold">${data[0]}</p>
                                 </div>
                                 <div class="col">
-                                    <p class="text-secondary">${data[1]}</p></div>
+                                    <p class="text-secondary fw-bold">${data[1]}</p></div>
                                 </div>`
             trocadores.innerHTML = resultHTML;
             desativarOption(data[0]);
